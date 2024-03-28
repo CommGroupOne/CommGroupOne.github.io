@@ -6,18 +6,57 @@
 
 ****************/
 
-html,
-body,
-nav,
-footer,
-div,
-p,
-ul,
-li,
-h1,
-h2,
-h3,
-form {
-    margin: 0;
-    padding: 0;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body, html {
+  height: 100%;
+}
+
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: #333; 
+  color: #fff;
+  padding: 1em;
+  z-index: 1000;
+}
+
+.aside {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 200px; 
+  height: 100%;
+  background: #555; 
+  color: #fff;
+  padding-top: 60px; 
+  z-index: 500;
+}
+
+.aside ul {
+  list-style: none;
+}
+
+.aside li {
+  padding: 10px;
+  border-bottom: 1px solid #777; 
+}
+
+.main {
+  margin-left: 200px; 
+  padding-top: 60px; 
+  background: #f4f4f4; 
+}
+
+.main > div {
+  margin: 1em;
+  padding: 1em;
+  background: #ddd; 
+  border: 1px solid #ccc;
 }
