@@ -1,0 +1,23 @@
+/*******w******** 
+    
+    Name: Group 1
+    Date: Marc 27th, 2024
+    Description: Styles
+
+****************/
+
+html,
+body,
+nav,
+footer,
+div,
+p,
+ul,
+li,
+h1,
+h2,
+h3,
+form {
+    margin: 0;
+    padding: 0;
+}
