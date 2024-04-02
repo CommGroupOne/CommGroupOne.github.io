@@ -121,4 +121,6 @@ main .tutorial {
   background-color: white;
 }
 
-
+a. a:active, a:visited {
+  text-decoration: none;
+}
