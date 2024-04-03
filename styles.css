@@ -73,12 +73,10 @@ main .tutorial {
 .tutorial2Text,
 .tutorial3Text {
   flex: 2;
-/*   text-align: center; */
   margin: 10px;
   border: 1px solid #ccc;
   padding: 10px; 
   margin-right: 10px; 
-/*   line-height: 280px; */
   height: 280px;
   background-color: white;
 }
@@ -87,12 +85,10 @@ main .tutorial {
 .tutorial2Video,
 .tutorial3Video {
   flex: 1;
-/*   text-align: center; */
   margin: 10px;
   border: 1px solid #ccc;
   padding: 10px; 
   margin-right: 10px; 
-/*   line-height: 280px; */
   height: 280px;
   background-color: white;
 }
@@ -101,12 +97,10 @@ main .tutorial {
 .tutorial2Diagram,
 .tutorial3Diagram {
   flex: 1; 
-/*   text-align: center;  */
   margin: 10px;
   border: 1px solid #ccc;
   padding: 10px; 
   margin-right: 10px; 
-/*   line-height: 300px; */
   height: 300px;
   background-color: white;
 }
@@ -115,12 +109,10 @@ main .tutorial {
 .tutorial2Codepen,
 .tutorial3Codepen {
   flex: 2; 
-/*   text-align: center;  */
   margin: 10px;
   border: 1px solid #ccc;
   padding: 10px; 
   margin-right: 10px; 
-/*   line-height: 280px; */
   height: 280px;
   background-color: white;
 }
