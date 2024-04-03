@@ -78,7 +78,7 @@ main .tutorial {
   border: 1px solid #ccc;
   padding: 10px; 
   margin-right: 10px; 
-  line-height: 280px;
+/*   line-height: 280px; */
   background-color: white;
 }
 
