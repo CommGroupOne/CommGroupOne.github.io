@@ -87,7 +87,7 @@ main .tutorial {
 .tutorial2Video,
 .tutorial3Video {
   flex: 1;
-  text-align: center;
+/*   text-align: center; */
   margin: 10px;
   border: 1px solid #ccc;
   padding: 10px; 
@@ -101,7 +101,7 @@ main .tutorial {
 .tutorial2Diagram,
 .tutorial3Diagram {
   flex: 1; 
-  text-align: center; 
+/*   text-align: center;  */
   margin: 10px;
   border: 1px solid #ccc;
   padding: 10px; 
@@ -115,7 +115,7 @@ main .tutorial {
 .tutorial2Codepen,
 .tutorial3Codepen {
   flex: 2; 
-  text-align: center; 
+/*   text-align: center;  */
   margin: 10px;
   border: 1px solid #ccc;
   padding: 10px; 
