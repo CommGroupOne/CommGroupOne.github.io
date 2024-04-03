@@ -73,7 +73,7 @@ main .tutorial {
 .tutorial2Text,
 .tutorial3Text {
   flex: 2;
-  text-align: center;
+/*   text-align: center; */
   margin: 10px;
   border: 1px solid #ccc;
   padding: 10px; 
@@ -125,6 +125,6 @@ main .tutorial {
   background-color: white;
 }
 
-a. a:active, a:visited {
+a, a:active, a:visited {
   text-decoration: none;
 }
