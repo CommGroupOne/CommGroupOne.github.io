@@ -79,7 +79,7 @@ main .tutorial {
   margin-right: 10px; 
   height: 280px;
   background-color: white;
-  overflow: scroll;
+  overflow: auto;
 }
 
 .tutorial1Video,
