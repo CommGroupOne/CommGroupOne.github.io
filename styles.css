@@ -66,7 +66,7 @@ main .tutorial {
 .tutorial3Line2 {
   display: flex;
   align-items: center;
-  height: 360px;
+  height: 460px;
 }
 
 .tutorial1Text,
@@ -77,7 +77,7 @@ main .tutorial {
   border: 1px solid #ccc;
   padding: 10px; 
   margin-right: 10px; 
-  height: 280px;
+  height: 380px;
   background-color: white;
 }
 
