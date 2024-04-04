@@ -105,6 +105,10 @@ main .tutorial {
   background-color: white;
 }
 
+img{
+  width: 100%;
+}
+
 .tutorial1Codepen,
 .tutorial2Codepen,
 .tutorial3Codepen {
