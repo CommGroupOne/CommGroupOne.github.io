@@ -60,7 +60,10 @@ body, html {
 main .tutorial {
   background-color: #777;
   margin-top: 20px;
-  color: #FFF
+}
+
+.tutorial p {
+  color: #FFF;
 }
 
 .tutorial1Line1,
