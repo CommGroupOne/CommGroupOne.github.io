@@ -21,12 +21,12 @@ body, html {
 
 .aside {
   position: fixed;
-  top: 40;
+  top: 10px;
   left: 0;
   width: 200px; 
   height: 100%;
   background: #555; 
-  color: #FFF;
+  color: #000;
   padding-top: 60px; 
   z-index: 500;
 }
@@ -38,6 +38,10 @@ body, html {
 .aside li {
   padding: 10px;
   border-bottom: 1px solid #777; 
+}
+
+.aside li a {
+  color: #FFF;
 }
 
 .main {
