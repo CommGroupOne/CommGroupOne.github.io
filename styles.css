@@ -36,6 +36,9 @@ ul li{
   color: #fff;
   padding: 1em;
   z-index: 1000;
+  display: flex;
+  justify-content: center;
+  text-align: center;
 }
 
 .aside {
@@ -120,6 +123,7 @@ main .tutorial {
   margin-right: 10px; 
   height: auto;
   background-color: white;
+  border-radius: 12px;
 }
 
 .tutorial1Diagram,
@@ -149,6 +153,7 @@ img{
   margin-right: 10px; 
   height: auto;
   background-color: white;
+  border-radius: 12px;
 }
 
 a, a:active, a:visited {
