@@ -8,6 +8,25 @@ body, html {
   height: 100%;
 }
 
+p{
+   font-family: "Archivo", sans-serif;
+   padding: 5px;
+   letter-spacing: 0.5px;
+}
+
+ul{
+   font-family: "Archivo", sans-serif;
+}
+
+ul li{
+  padding: 5px; 
+  letter-spacing: 0.4px;
+}
+
+.header h1{
+   font-family: "Honk", system-ui;
+}
+
 .header {
   position: fixed;
   top: 0;
