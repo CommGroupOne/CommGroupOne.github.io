@@ -1,41 +1,25 @@
+/*******w******** 
+    
+    Name: Group 1
+    Date: Marc 27th, 2024
+    Description: Styles
+
+****************/
+
+
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
 }
 
-body, html {
-  height: 100%;
-}
-
-h1{  
-   font-family: "Archivo", sans-serif;
-}
-
-h2{
-   font-family: "Archivo", sans-serif;
-}
-
-h3{
-   font-family: "Archivo", sans-serif;
-}
-p{
-   font-family: "Archivo", sans-serif;
-   padding: 5px;
-   letter-spacing: 0.5px;
-}
-
-ul{
-   font-family: "Archivo", sans-serif;
-}
-
-ul li{
-  padding: 5px; 
-  letter-spacing: 0.4px;
-}
-
-.header h1{
-   font-family: "Honk", system-ui;
+body {
+  min-height: 100vh;
+  background: url(images/background.jpg) repeat center center fixed;
+  background-size: cover;
+  background-position: center;
 }
 
 .header {
@@ -43,139 +27,259 @@ ul li{
   top: 0;
   left: 0;
   width: 100%;
-  background: #333; 
-  color: #fff;
-  padding: 1em;
-  z-index: 1000;
+  padding: 1.3rem 10%;
   display: flex;
-  justify-content: center;
-  text-align: center;
-}
-
-.aside {
-  position: fixed;
-  top: 10px;
-  left: 0;
-  width: 200px; 
-  height: 100%;
-  background: #555; 
-  color: #000;
-  padding-top: 60px; 
-  z-index: 500;
-}
-
-.aside ul {
-  list-style: none;
-}
-
-.aside li {
-  padding: 10px;
-  border-bottom: 1px solid #777; 
-}
-
-.aside li a {
-  color: #FFF;
-}
-
-.main {
-  margin-left: 200px; 
-  padding-top: 60px; 
-  background: #f4f4f4; 
-}
-
-.main > div {
-  margin: 1em;
-  padding: 1em;
-  background: #ddd; 
-  border: 1px solid #ccc;
-}
-
-main .tutorial {
-  background-color: #777;
-  margin-top: 20px;
-}
-
-.tutorial p {
-  color: #FFF;
-}
-
-.tutorial1Line1,
-.tutorial1Line2,
-.tutorial2Line1,
-.tutorial2Line2,
-.tutorial3Line1,
-.tutorial3Line2 {
-  display: flex;
+  justify-content: space-between;
   align-items: center;
-  height: 360px;
+  z-index: 100;
 }
 
-.tutorial1Text,
-.tutorial2Text,
-.tutorial3Text {
-  flex: 2;
-  margin: 10px;
-  border: 1px solid #ccc;
-  padding: 10px; 
-  margin-right: 10px; 
-  height: 280px;
-  background-color: white;
-  overflow: auto;
-  line-height: 1.75em;
+.header::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgb(0, 0, 0, 0.1);
+  backdrop-filter: blur(50px);
+  z-index: -1;
 }
 
-.tutorial1Video,
-.tutorial2Video,
-.tutorial3Video {
-  flex: 1;
-  margin: 10px;
-  border: 1px solid #ccc;
-  padding: 10px; 
-  margin-right: 10px; 
-  height: auto;
-  background-color: white;
-  border-radius: 12px;
+.logo {
+  font-size: 2rem;
+  color: #FFF;
+  text-decoration: none;
+  font-weight: 700;
 }
 
-.tutorial1Diagram,
-.tutorial2Diagram,
-.tutorial3Diagram {
-  flex: 1; 
-  margin: 10px;
-  border: 1px solid #ccc;
-  padding: 10px; 
-  margin-right: 10px; 
-  height: 300px;
-  background-color: white;
+.navbar a {
+  font-size: 1.15rem;
+  color: #FFF;
+  text-decoration: none;
+  font-weight: 500;
+  margin-left: 2.5rem;
 }
 
-img{
+#check {
+  display: none;
+}
+
+.icons {
+  position: absolute;
+  right: 5%;
+  top: 5%;
+  font-size: 2.8rem;
+  color: #FFF;
+  cursor: pointer;
+  display: none;
+}
+
+@media (max-width: 1040px) {
+  .header {
+    padding: 1.3rem 5%;
+  }
+}
+
+@media (max-width: 926px) {
+  .logo {
+    font-size: 1.5rem;
+  }
+
+  .navbar a {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 720px) {
+  .icons {
+    display: inline-flex;
+  }
+
+  #check:checked~.icons #menu-icon {
+    display: none;
+  }
+
+  .icons #close-icon {
+    display: none;
+  }
+
+  #check:checked~.icons #close-icon {
+    display: block;
+  }
+
+  .navbar {
+    position: absolute;
+    top: 99%;
+    left: 0;
+    width: 100%;
+    height: 0;
+    background: rgb(0, 0, 0, 0.1);
+    backdrop-filter: blur(50px);
+    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: .3s ease;
+  }
+
+  #check:checked~.navbar {
+    height: 10.8rem;
+  }
+
+  .navbar a {
+    display: block;
+    font-size: 1.1rem;
+    margin: 1.5rem 0;
+    text-align: center;
+    transform: translateY(-50px);
+    transition: .3s ease;
+  }
+
+  #check:checked~.navbar a {
+    transform: translateY(0);
+  }
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin: 180px auto;
+  width: 80%;
+}
+
+.tutorial {
+  width: 90%;
+  padding: 30px;
+}
+
+.glass-effect {
+  background: rgba(0, 0, 0, 0.1);
+  border: 2px solid rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(50px);
+  border-radius: 20px;
+  box-shadow: 0 4px 6px rgba(211, 211, 211, 0.1);
+  margin-bottom: 20px;
+}
+
+@media (max-width: 768px) {
+    .glass-effect {
+        padding: 10px;
+    }
+}
+
+.tutorial-title {
+  padding: 0 0 20px 20px;
+  scroll-margin-top: 140px;
+}
+
+.tutorial-title h1 {
+  color: #FFF;
+}
+
+.tutorial-content {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 20px; 
+  align-items: start;
+}
+
+@media (max-width: 1380px) {
+  .tutorial-content {
+    grid-template-columns: 1fr; 
+  }
+}
+
+@media (max-width: 768px) {
+  .tutorial-content {
+    grid-template-columns: 1fr; 
+  }
+  .tutorial-text p,
+  .tutorial-text ul,
+  .tutorial-text li,
+  .tutorial-text a,
+  .tutorial-title h1,
+  .tutorial-text {
+    font-size: smaller; 
+  }
+  .tutorial {
+    padding: 15px; 
+  }
+
+  .tutorial-content {
+    gap: 10px;
+  }
+}
+
+.tutorial-text {
+  text-align: left;
+  padding: 0 0 20px 20px;
+  color: #FFF;
+}
+
+.tutorial-text h3 {
+  text-align: left !important;
+}
+
+.tutorial-text ul, 
+.tutorial-text li {
+  text-align: left;
+  padding: 0;
+  margin: 0;
+  list-style-position: inside; 
+}
+
+.tutorial-text a {
+  text-decoration: none;
+  color: #0A84FF;
+}
+
+.tutorial-text,
+.tutorial-diagram {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.tutorial-diagram img,
+.tutorial-video iframe,
+.tutorial-codepen .codepen {
   width: 100%;
   height: 100%;
 }
 
-.tutorial1Codepen,
-.tutorial2Codepen,
-.tutorial3Codepen {
-  flex: 2; 
-  margin: 10px;
-  border: 1px solid #ccc;
-  padding: 10px; 
-  margin-right: 10px; 
+.tutorial-diagram img {
+    border-radius: 20px;
+
+  min-width: 300px;
+  max-width: 100%;
   height: auto;
-  background-color: white;
-  border-radius: 12px;
 }
 
-a, a:active, a:visited {
-  text-decoration: none;
-  color: black;
+.tutorial-video {
+  position: relative;
+  overflow: hidden;
+  padding-top: 56.25%; 
+  border-radius: 20px;
 }
 
-ul{
-  list-style: inside;
+.tutorial-video iframe {
+   position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 20px;
 }
 
-h1 {
-  margin-bottom: 0.5rem;
+.footer {
+    background-color: rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(50px);
+    border-top: 2px solid rgba(255, 255, 255, 0.1);
+    color: #FFF;
+    text-align: center; 
+    padding: 30px 0; 
+    font-size: 14px; 
 }
